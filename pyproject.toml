@@ -1,0 +1,12 @@
+[project]
+name = "mcp-server-software"
+version = "0.1.0"
+description = "A Model Context Protocol server that provides software management capabilities for your computer. "
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.3.0",
+    "psutil>=7.0.0",
+    "pywin32>=309 ; sys_platform == 'win32'",
+]
